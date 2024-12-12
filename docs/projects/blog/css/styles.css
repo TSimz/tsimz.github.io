@@ -1,0 +1,810 @@
+@font-face {
+    font-family: 'cooper-hewitt-bold';
+    src: url('../fonts/cooperhewitt-bold-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cooper-hewitt-heavy';
+    src: url('../fonts/cooperhewitt-heavy-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --black: #000;
+    --white: #FFF;
+    --off-white: #f2f2f2;
+    --light-grey: #cbc9c9;
+    --grey: #707070;
+    --med-grey: #404040;
+    --dark-grey: #3A3A3A;
+    --orange: #c65614;
+    --green: #3a5a4f;
+    --yellow: #d9b23d;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+/* UTILITY CLASSES */
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.discover-button {
+    padding: 0.875rem 3.75rem;
+    font-family: 'Merriweather Sans', Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 32px;
+    display: inline-block;
+    background-color: var(--med-grey);
+    color: var(--off-white);
+}
+
+.discover-button:hover {
+    background-color: var(--orange);
+}
+
+/* GLOBAL STYLES */
+
+section {
+    padding: 2.5rem 1rem;
+    line-height: 1;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'cooper-hewitt-heavy', Arial, sans-serif;
+    font-size: 2.25rem;
+}
+
+h1 a {
+    color: var(--off-white);
+}
+
+h2 {
+    font-family: 'cooper-hewitt-heavy', Arial, sans-serif;
+    font-size: 5.625rem;
+    color: var(--med-grey);
+}
+
+p {
+    font-family: 'Merriweather Sans', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--black);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* MOBILE */
+
+header {
+    background-color: var(--dark-grey);
+    color: var(--off-white);
+}
+
+header div.flex {
+    justify-content: space-between;
+    padding: 0.25rem 0.75rem;
+}
+
+nav {
+    padding: 0 0.75rem;
+    z-index: 1;
+    max-height: 0;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    background-color: var(--dark-grey);
+}
+
+.active-nav {
+    max-height: unset;
+    overflow: unset;
+}
+
+header svg {
+    width: 1.8rem;
+    height: 1.5rem;
+}
+
+header svg:hover {
+    cursor: pointer;
+}
+
+header svg path:not(a svg path) {
+    fill: var(--off-white);
+}
+
+header nav svg {
+    display: none;
+}
+
+header ul {
+    text-align: right;
+}
+
+.top-nav {
+    margin: 0.5rem 0 1.5rem auto;
+    width: fit-content;
+}
+
+.top-nav > li:not(li:last-of-type) {
+    margin-bottom: 1.5rem;
+}
+
+.top-nav a {
+    padding-right: 0.25rem;
+    display: block;
+    border-radius: 5px;
+}
+
+.top-nav a:hover:not(.dropdown-nav a) {
+    color: var(--orange);
+}
+
+.top-nav > li > a {
+    font-family: 'cooper-hewitt-bold', Arial, sans-serif;
+    font-size: 1.5rem;
+    color: var(--off-white);
+}
+
+.dropdown-nav > li:first-of-type {
+    margin-top: 0.5rem;
+}
+
+.dropdown-nav > li:not(li:last-of-type) {
+    margin-bottom: 0.5rem;
+}
+
+.dropdown-nav > li > a {
+    font-family: 'Merriweather Sans', Arial, sans-serif;
+    font-size: 1.125rem;
+    color: var(--off-white);
+    text-decoration: underline;
+}
+
+.dropdown-nav a:hover {
+    background-color: var(--grey);
+}
+
+.back-option {
+    display: inline-block;
+    width: 98%;
+    color: #7aaabd;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 1rem;
+    background-color: #192E40;
+    padding: 0.5rem;
+    text-align: center;
+    border: 2px solid #7AAABD;
+    border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    position: fixed;
+    bottom: 3%;
+    left: 1%;
+}
+
+/* FOOD SECTION */
+
+.food-section p {
+    margin: 1.125rem 0;
+    max-width: 330px;
+    font-weight: 500;
+}
+
+.food-section span {
+    margin-left: 3.5rem;
+    display: block;
+    color: var(--grey);
+}
+
+.food-section div:last-child {
+    margin: 3rem auto 0;
+    width: 100%;
+    max-width: 360px;
+    height: 320px;
+    position: relative;
+}
+
+.food-section div img:first-child {
+    width: 90%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.food-section div img:last-child {
+    width: 240px;
+    height: 160px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* TRAVEL SECTION */
+
+.travel-section {
+    background-color: var(--off-white);
+}
+
+.travel-section h2 {
+    max-width: 305px;
+    color: var(--green);
+}
+
+.travel-section span {
+    text-align: right;
+    display: block;
+    color: var(--grey);
+}
+
+.travel-section div:not(div.container) {
+    margin-top: 1.125rem;
+    max-width: 305px;
+    text-align: right;
+}
+
+.travel-section img {
+    margin-left: auto;
+    margin-top: 2.5rem;
+    width: 70%;
+    max-width: 300px;
+}
+
+/* ARTICLE SECTION */
+
+.article-section h2 {
+    margin: 0 auto 1rem;
+    width: fit-content;
+    text-align: center;
+    position: relative;
+}
+
+.article-section svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: -1rem;
+    left: -0.5rem;
+}
+
+.article-section svg path {
+    fill: var(--orange);
+}
+
+article div {
+    margin-bottom: 2rem;
+    padding: 1rem 1rem 2.5rem;
+    background-color: var(--off-white);
+    position: relative;
+}
+
+article img {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+article h3 {
+    font-family: 'cooper-hewitt-heavy', Arial, sans-serif;
+    color: var(--yellow);
+    font-size: 2.625rem;
+    position: absolute;
+    bottom: -1.25rem;
+}
+
+article p,
+article a {
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    font-family: 'Merriweather Sans', Arial, sans-serif;
+    color: var(--med-grey);
+}
+
+article a {
+    display: inline-block;
+    text-decoration: underline;
+}
+
+/* VIDEO BLOG SECTION */
+
+.video-blog-section {
+    margin: 0 1rem 3rem;
+    padding: 0;
+}
+
+.video-blog-section > div {
+    padding: 2.5rem 1rem 4rem;
+    background-color: var(--med-grey);
+}
+
+.video-blog-section div div {
+    max-width: 305px;
+    text-align: right;
+}
+
+.video-blog-section h2,
+.video-blog-section p {
+    max-width: 305px;
+    color: var(--off-white);
+}
+
+.video-blog-section p {
+    margin: 2.5rem 0 1.5rem;
+}
+
+.video-blog-section img {
+    width: 100%;
+    max-width: 840px;
+}
+
+.video-blog-section a {
+    background-color: var(--off-white);
+    color: var(--grey);
+}
+
+.video-blog-section a:hover {
+    background-color: var(--orange);
+    color: var(--off-white);
+}
+
+.video-blog-section span {
+    display: block;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 2rem 1rem;
+    background-color: var(--med-grey);
+}
+
+footer > div > .flex {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: initial;
+    width: 100%;
+}
+
+footer ul {
+    margin: 0;
+}
+
+footer > div > ul > li {
+    margin-bottom: 2rem;
+    width: 49%;
+}
+
+footer li.flex {
+    align-items: initial;   
+}
+
+footer a {
+    font-family: 'Merriweather Sans', Arial, sans-serif;
+    color: var(--light-grey);
+    font-weight: 400;
+}
+
+footer > div > ul > li > a {
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+    color: var(--off-white);
+}
+
+footer a:hover {
+    color: var(--orange);
+}
+
+footer a:hover svg path {
+    fill: var(--orange);
+}
+
+footer > div > ul > li:last-of-type {
+    height: fit-content;
+}
+
+footer > div > ul > li:last-of-type > a:not(a:last-of-type) {
+    margin-right: 0.5rem;
+}
+
+footer svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+footer svg path {
+    fill: var(--light-grey);
+}
+
+.education-notice p {
+    color: var(--off-white);
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 540px) {
+    .back-option {
+        width: 14rem;
+        padding: 0.75rem;
+        left: calc(100% - 15rem);
+    }
+
+    .back-option:hover {
+        background-color: #7AAABD;
+        color: #192E40;
+        border-color: #192E40;
+    }
+}
+
+/* The media query below fixes an overflow issue with the article h3's. */
+@media screen and (max-width: 470px) {
+    article:nth-of-type(2) div,
+    article:nth-of-type(3) div {
+        margin-bottom: 4.5rem;
+    }
+
+    article:nth-of-type(4) div {
+        margin-bottom: 7rem;
+    }
+
+    article:nth-of-type(2) h3,
+    article:nth-of-type(3) h3 {
+        bottom: -3.75rem;
+    }
+
+    article:nth-of-type(4) h3 {
+        bottom: -6.25rem;
+    }
+
+    article span {
+        display: block;
+    }
+}
+
+/* MEDIUM VIEW */
+
+@media screen and (min-width: 840px) {
+    .wide-flex {
+        display: flex;
+        align-items: center;
+    }
+
+    nav {
+        max-height: unset;
+        overflow: unset;
+        width: 100%;
+        position: unset;
+    }
+
+    header ul {
+        text-align: center;
+    }
+
+    ul.top-nav {
+        margin: 0 0 0 auto;
+        display: flex;
+        align-items: center;
+    }
+
+    ul.top-nav > li {
+        position: relative;
+    }
+
+    ul.top-nav > li:not(li:last-of-type) {
+        margin-bottom: unset;
+    }
+
+    ul.top-nav > li:nth-of-type(2) {
+        margin: 0 3rem;
+    }
+
+    ul.top-nav > li:hover > .dropdown-nav {
+        max-height: unset;
+        overflow: unset;
+    }
+
+    ul.top-nav a {
+        padding-right: 0;
+        border-radius: unset;
+    }
+
+    ul.dropdown-nav {
+        max-height: 0;
+        overflow: hidden;
+        position: absolute;
+        background-color: var(--dark-grey);
+    }
+
+    ul.top-nav > li:first-of-type > ul.dropdown-nav {
+        width: 8rem;
+        left: -1rem;
+    }
+
+    ul.top-nav > li:nth-of-type(2) > ul.dropdown-nav {
+        width: 10.625rem;
+    }
+
+    ul.top-nav > li:last-of-type > ul.dropdown-nav {
+        width: 7.625rem;
+    }
+
+    ul.dropdown-nav > li {
+        padding: 0.25rem 0;
+    }
+
+    ul.dropdown-nav > li:first-of-type,
+    ul.dropdown-nav > li:not(li:last-of-type) {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    ul.dropdown-nav > li:last-of-type {
+        padding-bottom: 0.5rem;
+    }
+    
+    header svg:not(a svg) {
+        display: none;
+    }
+
+    header nav svg {
+        display: unset;
+        vertical-align: sub;
+    }
+
+    .food-section {
+        display: flex;
+        margin-bottom: 10rem;
+    }
+
+    .food-section div:last-child {
+        margin: 0 0 0 auto;
+        width: 50%;
+        max-width: 410px;
+        height: unset;
+    }
+
+    .food-section div img:first-child {
+        margin-left: auto;
+        position: unset;
+    }
+   
+    .food-section div img:last-child {
+        width: 90%;
+        height: unset;
+        bottom: -10rem;
+        left: -3rem;
+    }
+
+    .travel-section { 
+        margin-bottom: 10.5rem;
+    }
+
+    .travel-section div.container {
+        position: relative;
+    }
+
+    .travel-section h2 {
+        margin-left: 3.5rem;
+    }
+
+    .travel-section div:not(div.container) {
+        margin-left: 3.5rem;
+    }
+
+    .travel-section img {
+        margin: 0;
+        position: absolute;
+        bottom: -13rem;
+        right: 3.5rem;
+    }
+
+    .article-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    article {
+        width: 49%;
+        margin-right: 2%;
+    }
+
+    .article-section article:nth-of-type(2),
+    .article-section article:last-of-type {
+        margin-right: 0;
+    }
+
+    .article-section h2 {
+        margin-left: 3.5rem;
+        width: 100%;
+        text-align: left;
+    }
+
+    .video-blog-section {
+        margin: 0 8rem 3rem 1rem;
+        position: relative;
+    }
+    
+    .video-blog-section > div {
+        padding: 2.5rem 1rem 4rem 4rem;
+    }
+    
+    .video-blog-section img {
+        width: 378px;
+        position: absolute;
+        bottom: 5.5rem;
+        right: -7rem;
+    }
+
+    footer > div > .flex {
+        width: 80%;
+        max-width: 850px;
+    }
+    
+    footer > div > ul > li {
+        margin-bottom: 0;
+        width: 24%;
+    }
+    
+    footer > div > ul > li:last-of-type > a:not(a:last-of-type) {
+        margin-right: 0.75rem;
+    }
+}
+
+/* LARGE VIEW */
+
+@media screen and (min-width: 1280px) {
+    div.wide-flex {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .food-section {
+        margin-bottom: 15rem;
+        justify-content: center;
+    }
+
+    .food-section div:last-child {
+        margin-left: 9rem;
+        max-width: 460px;
+    }
+
+    .food-section div img:last-child {
+        left: -7rem;
+    }
+
+    .food-section h2 {
+        text-align: center;
+        font-size: 7.8125rem;
+    }
+
+    .food-section span {
+        font-size: 5.625rem;
+        margin-left: 0;
+    }
+
+    .travel-section { 
+        margin-bottom: 6.5rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .travel-section div:not(div.container) {
+        width: 32.1875rem;
+        max-width: unset;
+    }
+
+    .travel-section div.container {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .travel-section h2 {
+        font-size: 7.8125rem;
+        width: 32.1875rem;
+        max-width: 1280px;
+    }
+
+    .travel-section span {
+        font-size: 5.625rem;
+        margin-left: 16.5rem;
+    }
+
+    .travel-section img {
+        max-width: 360px;
+        bottom: -8.4rem;
+        right: 15rem;
+    }
+
+    .article-section {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    article,
+    .article-section article:nth-of-type(2) {
+        width: 23.5%;
+        margin-right: 2%;
+    }
+
+    .article-section h2 {
+        margin-left: 7rem;
+        font-size: 7.8125rem;
+    }
+
+    .article-section svg {
+        width: 3.5rem;
+        height: 3.5rem;
+        top: -1.25rem;
+        left: -0.75rem;
+    }
+
+    .article-section article:not(article:first-of-type) h3 {
+        bottom: -3.75rem;
+    }
+
+    article div:not(article:first-of-type div) {
+        margin-bottom: 4.5rem;
+    } 
+
+    .video-blog-section {
+        max-width: 1280px;
+        margin: 0 auto 3rem;
+        padding-left: 1rem;
+        padding-right: 16rem;
+    }
+
+    .video-blog-section div div {
+        margin: 0 auto;
+        padding-left: 5rem;
+        max-width: 400px;
+        text-align: left;
+    }
+
+    .video-blog-section h2 {
+        margin: 0 auto;
+        font-size: 7.8125rem;
+        max-width: 330px;
+    }
+
+    .video-blog-section span {
+        font-size: 5.625rem;
+    }
+
+    .video-blog-section p {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 5rem;
+        max-width: 400px;
+    }
+
+    .video-blog-section img {
+        bottom: 6.5rem;
+        right: 1rem;
+    }
+
+    footer > div {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+}

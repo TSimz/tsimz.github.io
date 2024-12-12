@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tyler Simon">
+    <meta name="description" content="View and browse Tyler Simon's recent projects">
+    <title>Tyler Simon - Projects</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-sky">
+    <header class="text-slate-100 text-2xl drop-shadow-lg bg-dark">
+        <div class="lg:container lg:mx-auto xs:px-4 md:px-6 xs:flex xs:justify-between xs:items-center">
+            <div class="px-4 xs:px-0 py-4 flex justify-center xs:justify-start">
+                <a href="/"><img src="../img/logo.png" alt="Tyler Simon's logo" title="Tyler Simon's logo"></a>
+            </div>
+            <nav class="xs:flex xs:items-center xs:self-stretch text-dark xs:text-light bg-light xs:bg-dark border-b-2 border-dark xs:border-0">
+                <ul class="flex justify-center gap-3 sm:gap-6 uppercase">
+                    <li><a class="inline-block py-2 px-2 xs:px-4 font-bold rounded-md text-dark xs:text-light hover:bg-light hover:text-dark text-lg xs:text-xl sm:text-2xl" href="/projects/index.html">Projects</a></li>
+                    <li><a class="inline-block py-2 px-2 xs:px-4 font-bold rounded-md text-dark xs:text-light hover:bg-light hover:text-dark text-lg xs:text-xl sm:text-2xl" href="../about.html">About</a></li>
+                    <li><a class="inline-block py-2 px-2 xs:px-4 font-bold rounded-md text-dark xs:text-light hover:bg-light hover:text-dark text-lg xs:text-xl sm:text-2xl" href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="bg-dark text-offwhite">
+            <div class="px-4 md:px-6 py-11 lg:container lg:mx-auto">
+                <h1 class="text-4xl md:text-6xl font-bold text-center sm:text-left">Project Showcase</h1>
+                <p class="py-4 lg:max-w-2xl text-center sm:text-left">Browse my recent projects to get an idea of my skills and what I've been working on lately.</p>
+            </div>
+        </section>
+        <section class="bg-offwhite drop-shadow-lg">
+            <div class="px-4 md:px-6 py-11 sm:py-14 lg:container lg:mx-auto">
+                <article class="mb-20" id="capstone-article">
+                    <div class="flex flex-col xs:flex-row justify-between pb-6">
+                        <div>
+                            <h3 class="md:pb-1 text-2xl md:text-4xl font-bold text-dark">Capstone Project</h3>
+                            <p class="uppercase text-slate-500">Created: Early 2023</p>
+                        </div>
+                        <div>
+                            <p class="flex flex-wrap gap-2 sm:gap-6 mt-2">
+                                <span class="px-2 sm:px-3 rounded-xl text-teal font-bold text-sm sm:text-lg border border-teal">LARAVEL</span>
+                                <span class="px-2 sm:px-3 rounded-xl text-teal font-bold text-sm sm:text-lg border border-teal">ALPINEJS</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col-reverse md:flex-row justify-between">
+                        <div class="project-desc">
+                            <p class="pb-4 pt-4 md:pt-0">To wrap up all I learned through school, I was paired with two other students and tasked with building a website from scratch for a client. We coordinated as a team to design and develop this complex, multi-page website which had many features.</p>
+                            <p class="pb-4">I participated in much of the entire process, including the design sprint, interviewing the client, some planning on how the site would look and function, etc. However my main focus was a mix of front-end and back-end development for the majority of it. I had to learn the PHP framework Laravel and use it to implement much of the functionality that was required on the site. I was able to achieve this in the one semester that we worked on this project.</p>
+                            <p class="pb-4">Specifically, these are the notable tasks or features that I completed:</p>
+                            <ul class="pb-4 list">
+                                <li>Normalization and completed the ERD for the database.</li>
+                                <li>Login and registration system with proper authentication - users see different things depending if they are a guest, logged in, or admin. This also includes forgot password, remember me, and email verification.</li>
+                                <li>"Wizard" forms using AlpineJS for a better user experience.</li>
+                                <li>Profile update functionality - a logged in user can update their personal and contact information, change their email address, and change their password.</li>
+                                <li>Admin dashboard (seen in the image) - admins can view a nicely laid out table, with pagination and search. Admins have the ability to set users as admin or back to user, and to delete users. Admins can also add and manage existing "sponsors", which are displayed in the website for everyone to see.</li>
+                            </ul>
+                            <p><strong>Note:</strong> Due to communication challenges with the client who requested the website, it wasn't implemented. So unfortunately it is not live and I cannot showcase it.</p>
+                        </div>
+                        <div class="project-img">
+                            <img src="../img/capstone-proj-dashboard.jpg" alt="Desktop screenshot of an admin dashboard table" title="Capstone Project" class="w-full drop-shadow-lg rounded-md">
+                        </div>
+                    </div>
+                </article>
+                <article class="mb-20" id="learnbyhabit-article">
+                    <div class="flex flex-col xs:flex-row justify-between pb-6">
+                        <div>
+                            <h3 class="md:pb-1 text-2xl md:text-4xl font-bold text-dark">Learn By Habit</h3>
+                            <p class="uppercase text-slate-500">Created: Late 2022</p>
+                        </div>
+                        <div>
+                            <p class="flex flex-wrap gap-2 sm:gap-6 mt-2">
+                                <span class="px-2 sm:px-3 rounded-xl text-teal font-bold text-sm sm:text-lg border border-teal">HTML</span>
+                                <span class="px-2 sm:px-3 rounded-xl text-teal font-bold text-sm sm:text-lg border border-teal">CSS GRID</span>
+                                <span class="px-2 sm:px-3 rounded-xl text-teal font-bold text-sm sm:text-lg border border-teal">INTRINSIC LAYOUT</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col-reverse md:flex-row justify-between">
+                        <div class="project-desc">
+                            <p class="pb-4 pt-4 md:pt-0">An assignment with a primary focus on CSS grid, this was a fun challenge and my first time using the technique. For the project, I was provided with a Photoshop document, and the instructions were to create a webpage based on the wireframe using HTML and CSS.</p>
+                            <p class="pb-4">This assignment differed from similar ones I had done in the past in that I was given the wireframe for the largest screen size and tasked with planning and implementing the designs for the smaller screens in addition to all the coding. There was also an emphasis on "Intrinsic Web Design,” where the design was supposed to be highly usable across all screen sizes using things like grid and fluid typography, with minimal use of media queries.</p>
+                            <p class="pb-6"><strong>Note:</strong> Build only includes the homepage. Additional pages not linked.</p>
+                            <a class="inline-block py-1 px-4 font-bold rounded-md text-dark hover:bg-light text-lg border border-dark w-full xs:w-fit text-center" href="/projects/learn-by-habit/index.html">View Website</a>
+                        </div>
+                        <div class="project-img">
+                            <img src="../img/learnbyhabit-desktop.jpg" alt="Desktop screenshot of a hero banner and navigation for a website called Learn By Habit" title="Learn by Habit" class="w-full drop-shadow-lg rounded-md">
+                        </div>
+                    </div>
+                </article>
+                <article class="mb-20" id="creative-studio-article">
+                    <div class="flex flex-col xs:flex-row justify-between pb-6">
+                        <div>
+                            <h3 class="md:pb-1 text-2xl md:text-4xl font-bold text-dark">Creative Studio</h3>
+                            <p class="uppercase text-slate-500">Created: Early 2022</p>
+                        </div>
+                        <div>
+                            <p class="flex gap-2 sm:gap-6 mt-2">
+                                <span class="px-2 sm:px-3 rounded-xl text-teal font-bold text-sm sm:text-lg border border-teal">HTML</span>
+                                <span class="px-2 sm:px-3 rounded-xl text-teal font-bold text-sm sm:text-lg border border-teal">CSS</span>
+                                <span class="px-2 sm:px-3 rounded-xl text-teal font-bold text-sm sm:text-lg border border-teal">RESPONSIVE</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col-reverse md:flex-row justify-between">
+                        <div class="project-desc">
+                            <p class="pb-4 pt-4 md:pt-0">This website was an assignment for a second-level web design fundamentals class. It was meant to test my skills in developing a responsive website based on a provided Photoshop wireframe, specifically the ability to use various CSS techniques like flexbox, navigation, horizontal scroll, and some form styling.</p>
+                            <p class="pb-4">It's a pretty sleek design I enjoyed building and coding from scratch to look and function exactly like the wireframe, which I've become better at doing. The design is responsive and looks great on all screens.</p>
+                            <p class="pb-6"><strong>Note:</strong> Build only includes the home and contact pages. Additional pages not linked.</p>
+                            <a class="inline-block py-1 px-4 font-bold rounded-md text-dark hover:bg-light text-lg border border-dark w-full xs:w-fit text-center" href="/projects/creative-studio/index.html">View Website</a>
+                        </div>
+                        <div class="project-img">
+                            <img src="../img/creative-studio-desktop.jpg" alt="Desktop screenshot of a hero banner and navigation for a website called Creative Studio" title="Creative Studio" class="w-full drop-shadow-lg rounded-md">
+                        </div>
+                    </div>
+                </article>
+                <article id="blog-article">
+                    <div class="flex flex-col xs:flex-row justify-between pb-6">
+                        <div>
+                            <h3 class="md:pb-1 text-2xl md:text-4xl font-bold text-dark">Blog</h3>
+                            <p class="uppercase text-slate-500">Created: Early 2022</p>
+                        </div>
+                        <div>
+                            <p class="flex gap-2 sm:gap-6 mt-2">
+                                <span class="px-2 sm:px-3 rounded-xl text-teal font-bold text-sm sm:text-lg border border-teal">HTML</span>
+                                <span class="px-2 sm:px-3 rounded-xl text-teal font-bold text-sm sm:text-lg border border-teal"">CSS</span>
+                                <span class="px-2 sm:px-3 rounded-xl text-teal font-bold text-sm sm:text-lg border border-teal">RESPONSIVE</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col-reverse md:flex-row justify-between">
+                        <div class="project-desc">
+                            <p class="pb-4 pt-4 md:pt-0">This was another website build assignment for the second-level web design fundamentals class, where I was given a Photoshop wireframe and tasked with replicating it using HTML and CSS. I implemented specific CSS techniques taught up until that point, including flexbox and CSS positioning.</p>
+                            <p class="pb-4">Additionally, the build features dropdown menus. The CSS positioning techniques were also a bit tricky at first, but it definitely adds extra creativity and flexibility.</p>
+                            <p class="pb-6"><strong>Note:</strong> Build only includes the homepage. Additional pages not linked.</p>
+                            <a class="inline-block py-1 px-4 font-bold rounded-md text-dark hover:bg-light text-lg border border-dark w-full xs:w-fit text-center" href="/projects/blog/index.html">View Website</a>
+                        </div>
+                        <div class="project-img">
+                            <img src="../img/blog-desktop.jpg" alt="Desktop screenshot of a hero banner and navigation for a website called Blog" title="Blog" class="w-full rounded-md drop-shadow-lg">
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-sky">
+        <div class="px-4 py-14 lg:px-6 lg:container lg:mx-auto">
+            <p class="text-center text-slate-500 text-sm">This website was designed by me using Tailwind CSS.</p>
+        </div>
+    </footer>
+</body>
+</html>

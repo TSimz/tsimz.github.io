@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tyler Simon">
+    <meta name="description" content="Get in touch with Tyler Simon">
+    <title>Tyler Simon - Contact</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-sky">
+    <header class="text-slate-100 text-2xl drop-shadow-lg bg-dark">
+        <div class="lg:container lg:mx-auto xs:px-4 md:px-6 xs:flex xs:justify-between xs:items-center">
+            <div class="px-4 xs:px-0 py-4 flex justify-center xs:justify-start">
+                <a href="/"><img src="img/logo.png" alt="Tyler Simon's logo" title="Tyler Simon's logo"></a>
+            </div>
+            <nav class="xs:flex xs:items-center xs:self-stretch text-dark xs:text-light bg-light xs:bg-dark border-b-2 border-dark xs:border-0">
+                <ul class="flex justify-center gap-3 sm:gap-6 uppercase">
+                    <li><a class="inline-block py-2 px-2 xs:px-4 font-bold rounded-md text-dark xs:text-light hover:bg-light hover:text-dark text-lg xs:text-xl sm:text-2xl" href="/projects/index.html">Projects</a></li>
+                    <li><a class="inline-block py-2 px-2 xs:px-4 font-bold rounded-md text-dark xs:text-light hover:bg-light hover:text-dark text-lg xs:text-xl sm:text-2xl" href="about.html">About</a></li>
+                    <li><a class="inline-block py-2 px-2 xs:px-4 font-bold rounded-md text-dark xs:text-light hover:bg-light hover:text-dark text-lg xs:text-xl sm:text-2xl" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="bg-dark text-offwhite">
+            <div class="px-4 md:px-6 py-11 lg:container lg:mx-auto">
+                <h1 class="text-4xl md:text-6xl font-bold text-center sm:text-left">Contact Me</h1>
+                <p class="py-4 lg:max-w-2xl text-center sm:text-left">Get in touch with me using the form below and I'll get back to you as soon as possible.</p>
+            </div>
+        </section>
+        <section class="bg-offwhite drop-shadow-lg">
+            <!-- <div class="text-dark px-4 md:px-6 py-11 sm:py-14 lg:container lg:mx-auto">
+                <div class="w-full">
+                    <form action="#" method="POST" class="bg-offwhite border border-slate-300 shadow-md rounded-md p-8">
+                        <div class="lg:flex gap-7">
+                            <div class="mb-8 lg:w-full">
+                                <label class="block text-dark text-sm font-bold mb-2" for="name">Name *</label>
+                                <input class="shadow appearance-none border border-slate-300 rounded-md w-full py-2 px-3 text-slate-600 leading-tight focus:outline-light focus:shadow-outline" name="name" id="name" type="text" placeholder="Your Name" value="<?php if($name) {echo $name;} ?>" required>
+                                <?php if($nameMsg) {echo $preMsg.$nameMsg.$postMsg;} ?>
+                            </div>
+                            <div class="mb-8 lg:w-full">
+                                <label class="block text-dark text-sm font-bold mb-2" for="email">Email *</label>
+                                <input class="shadow appearance-none border border-slate-300 rounded-md w-full py-2 px-3 text-slate-600 leading-tight focus:outline-light focus:shadow-outline" name="email" id="email" type="text" placeholder="Your Email" value="<?php if($email) {echo $email;} ?>" required>
+                                <?php if($emailMsg) {echo $preMsg.$emailMsg.$postMsg;} ?>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <label class="block text-dark text-sm font-bold mb-2" for="message">Message *</label>
+                            <textarea class="shadow appearance-none border border-slate-300 rounded-md w-full py-2 px-3 text-slate-600 leading-tight focus:outline-light focus_shadow-outline max-h-48" name="message" id="message" placeholder="Message" required><?php if($message) {echo $message;} ?></textarea>
+                            <?php if($messageMsg) {echo $preMsg.$messageMsg.$postMsg;} ?>
+                        </div>
+                        <div>
+                            <input type="submit" name="submit" value="Submit" class="w-full sm:w-auto bg-light hover:cursor-pointer hover:bg-dark border border-dark text-offwhite font-bold py-1 px-4 rounded-md focus:outline-light focus:shadow-outline">
+                        </div>
+                    </form>
+                </div>
+            </div> -->
+        </section>
+    </main>
+    <footer class="bg-sky">
+        <div class="px-4 py-14 lg:px-6 lg:container lg:mx-auto">
+            <p class="text-center text-slate-500 text-sm">This website was designed by me using Tailwind CSS.</p>
+        </div>
+    </footer>
+</body>
+</html>
